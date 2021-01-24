@@ -39,16 +39,25 @@ TC1_ValidateOrder
 #6. Increase the quantity to 2 
     Click Element    //p[text()='+'] 
     
-
+#7. Click on Add to Cart and goto cart 
     Click Element    //input[@title="Add To Cart"] 
     Click Element    //a[@title="View Shopping Cart"]   
     
-    Click Element    //input[@name="Checkout"]     
+#8. Assert to true if the Cart on top menu displays 2
+
+
+
+#9. Click on checkout 
+    Click Element    //input[@name="Checkout"]   
+#10. click on guest checkout  
     Click Element    //button[@id="LPGuestCheckout"]      
     
+#11. Click on Continue to payment
     Click Element    //input[@value="Continue to Payment"]   
     
+#12. validate all the error messages 
     ${errortxt}    Get Text    //span[@class="errorMsg"]
     Log To Console    ${errortxt}
     
+#13. Close the browser 
     Close Browser     
