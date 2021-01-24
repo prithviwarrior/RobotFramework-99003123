@@ -25,4 +25,5 @@ TC1_ValidateOrder
     Click Element     //button[@id='loginAction']
     
 #5. Validate the error message
-
+    ${errortxt}    Get Text    //span[@class="alerttext"]
+    Log To Console    ${errortxt}
