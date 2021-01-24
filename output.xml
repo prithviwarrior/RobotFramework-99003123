@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210124 22:28:05.271" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210124 23:27:54.395" rpa="false">
 <suite id="s1" name="KOHL" source="C:\Users\user\eclipse-workspace\Robot_Workspace\RobotFramework\KOHL">
 <suite id="s1-s1" name="SearchSuite" source="C:\Users\user\eclipse-workspace\Robot_Workspace\RobotFramework\KOHL\SearchSuite.robot">
-<test id="s1-s1-t1" name="TC1_ValidCredential">
+<test id="s1-s1-t1" name="TC1_ValidateOrder">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
 <arguments>
 <arg>Path</arg>
 <arg>${OUTPUT_DIR}//driver</arg>
 </arguments>
-<msg timestamp="20210124 22:28:05.569" level="INFO">Environment variable 'Path' set to value 'C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files (x86)\Groovy\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2);C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\mingw-w64\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\usr\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Scripts;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;C:\Program Files (x86)\Groovy\bin;;C:\WINDOWS\system32;;C:\Users\user\eclipse-workspace\Robot_Workspace\RobotFramework\KOHL//driver'.</msg>
-<status status="PASS" starttime="20210124 22:28:05.569" endtime="20210124 22:28:05.570"></status>
+<msg timestamp="20210124 23:27:55.220" level="INFO">Environment variable 'Path' set to value 'C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files (x86)\Groovy\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2);C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\mingw-w64\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\usr\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Scripts;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;C:\Program Files (x86)\Groovy\bin;;C:\WINDOWS\system32;;C:\Users\user\eclipse-workspace\Robot_Workspace\RobotFramework\KOHL//driver'.</msg>
+<status status="PASS" starttime="20210124 23:27:55.219" endtime="20210124 23:27:55.228"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -18,63 +18,149 @@
 <arg>url=https://www.kohls.com/</arg>
 <arg>browser=chrome</arg>
 </arguments>
-<msg timestamp="20210124 22:28:05.571" level="INFO">Opening browser 'chrome' to base url 'https://www.kohls.com/'.</msg>
-<status status="PASS" starttime="20210124 22:28:05.570" endtime="20210124 22:28:14.466"></status>
+<msg timestamp="20210124 23:27:55.229" level="INFO">Opening browser 'chrome' to base url 'https://www.kohls.com/'.</msg>
+<status status="PASS" starttime="20210124 23:27:55.228" endtime="20210124 23:28:39.384"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210124 22:28:14.468" endtime="20210124 22:28:14.676"></status>
+<status status="PASS" starttime="20210124 23:28:39.384" endtime="20210124 23:28:57.185"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20210124 22:28:14.676" endtime="20210124 22:28:14.679"></status>
+<status status="PASS" starttime="20210124 23:28:57.185" endtime="20210124 23:28:57.188"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//input[@id='search']</arg>
 </arguments>
-<msg timestamp="20210124 22:28:14.681" level="INFO">Clicking element 'xpath=//input[@id='search']'.</msg>
-<status status="PASS" starttime="20210124 22:28:14.680" endtime="20210124 22:28:15.089"></status>
+<msg timestamp="20210124 23:28:57.189" level="INFO">Clicking element 'xpath=//input[@id='search']'.</msg>
+<status status="PASS" starttime="20210124 23:28:57.189" endtime="20210124 23:28:57.324"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>name="search"</arg>
-<arg>tuxedo</arg>
+<arg>xpath=//input[@id='search']</arg>
+<arg>mens tuxedos</arg>
 </arguments>
-<msg timestamp="20210124 22:28:15.090" level="INFO">Typing text 'tuxedo' into text field 'name="search"'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210124 22:28:15.612" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210124 22:28:15.132" endtime="20210124 22:28:15.613"></status>
+<msg timestamp="20210124 23:28:57.325" level="INFO">Typing text 'mens tuxedos' into text field 'xpath=//input[@id='search']'.</msg>
+<status status="PASS" starttime="20210124 23:28:57.324" endtime="20210124 23:28:57.459"></status>
 </kw>
-<msg timestamp="20210124 22:28:15.619" level="FAIL">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=88.0.4324.104)
-</msg>
-<status status="FAIL" starttime="20210124 22:28:15.090" endtime="20210124 22:28:15.620"></status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[text()='mens tuxedos']</arg>
+</arguments>
+<msg timestamp="20210124 23:28:57.460" level="INFO">Clicking element '//span[text()='mens tuxedos']'.</msg>
+<status status="PASS" starttime="20210124 23:28:57.459" endtime="20210124 23:29:00.576"></status>
 </kw>
-<status status="FAIL" starttime="20210124 22:28:05.567" endtime="20210124 22:28:15.621" critical="yes">InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
-  (Session info: chrome=88.0.4324.104)
-</status>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@class="sbSelector"]</arg>
+</arguments>
+<msg timestamp="20210124 23:29:00.578" level="INFO">Clicking element '//a[@class="sbSelector"]'.</msg>
+<status status="PASS" starttime="20210124 23:29:00.576" endtime="20210124 23:29:13.886"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@href='#Price High-Low']</arg>
+</arguments>
+<msg timestamp="20210124 23:29:13.888" level="INFO">Clicking element '//a[@href='#Price High-Low']'.</msg>
+<status status="PASS" starttime="20210124 23:29:13.887" endtime="20210124 23:29:18.243"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210124 23:29:23.246" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210124 23:29:18.243" endtime="20210124 23:29:23.246"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//img[@class="pmp-hero-img"]</arg>
+</arguments>
+<msg timestamp="20210124 23:29:23.248" level="INFO">Clicking element '//img[@class="pmp-hero-img"]'.</msg>
+<status status="PASS" starttime="20210124 23:29:23.247" endtime="20210124 23:29:27.655"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@class="sbSelector"]</arg>
+</arguments>
+<msg timestamp="20210124 23:29:27.656" level="INFO">Clicking element '//a[@class="sbSelector"]'.</msg>
+<status status="PASS" starttime="20210124 23:29:27.655" endtime="20210124 23:29:35.589"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@href="#40R 33"]</arg>
+</arguments>
+<msg timestamp="20210124 23:29:35.591" level="INFO">Clicking element '//a[@href="#40R 33"]'.</msg>
+<status status="PASS" starttime="20210124 23:29:35.590" endtime="20210124 23:29:36.318"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//p[text()='+']</arg>
+</arguments>
+<msg timestamp="20210124 23:29:36.320" level="INFO">Clicking element '//p[text()='+']'.</msg>
+<status status="PASS" starttime="20210124 23:29:36.320" endtime="20210124 23:29:36.461"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@title="Add To Cart"]</arg>
+</arguments>
+<msg timestamp="20210124 23:29:36.463" level="INFO">Clicking element '//input[@title="Add To Cart"]'.</msg>
+<status status="PASS" starttime="20210124 23:29:36.462" endtime="20210124 23:29:37.863"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@title="View Shopping Cart"]</arg>
+</arguments>
+<msg timestamp="20210124 23:29:37.865" level="INFO">Clicking element '//a[@title="View Shopping Cart"]'.</msg>
+<status status="PASS" starttime="20210124 23:29:37.864" endtime="20210124 23:29:43.399"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@name="Checkout"]</arg>
+</arguments>
+<msg timestamp="20210124 23:29:43.400" level="INFO">Clicking element '//input[@name="Checkout"]'.</msg>
+<status status="PASS" starttime="20210124 23:29:43.399" endtime="20210124 23:29:59.647"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@id="LPGuestCheckout"]</arg>
+</arguments>
+<msg timestamp="20210124 23:29:59.649" level="INFO">Clicking element '//button[@id="LPGuestCheckout"]'.</msg>
+<status status="PASS" starttime="20210124 23:29:59.647" endtime="20210124 23:30:03.664"></status>
+</kw>
+<status status="PASS" starttime="20210124 23:27:55.216" endtime="20210124 23:30:03.665" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20210124 22:28:05.337" endtime="20210124 22:28:15.622"></status>
+<status status="PASS" starttime="20210124 23:27:54.715" endtime="20210124 23:30:03.667"></status>
 </suite>
-<status status="FAIL" starttime="20210124 22:28:05.310" endtime="20210124 22:28:15.627"></status>
+<status status="PASS" starttime="20210124 23:27:54.654" endtime="20210124 23:30:03.670"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="KOHL">KOHL</stat>
-<stat pass="0" fail="1" id="s1-s1" name="SearchSuite">KOHL.SearchSuite</stat>
+<stat pass="1" fail="0" id="s1" name="KOHL">KOHL</stat>
+<stat pass="1" fail="0" id="s1-s1" name="SearchSuite">KOHL.SearchSuite</stat>
 </suite>
 </statistics>
 <errors>
