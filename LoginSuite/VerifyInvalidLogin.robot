@@ -1,6 +1,6 @@
 *** Settings ***
 Library    OperatingSystem    
-Library    SeleniumLibrary    
+Library    SeleniumLibrary    screenshot_root_directory=${OUTPUT_DIR}//ScreenShots
 
 *** Test Cases ***
 
