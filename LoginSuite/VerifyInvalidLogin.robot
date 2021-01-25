@@ -20,7 +20,7 @@ TC1_ValidateOrder
     Click Element    //button[text()="OK"]    
     
 #4. Provide username and password
-    Input Text    //input[@id='user']    text    
+    Input Text    //inp`ut[@id='user']    text    
     Input Text    //input[@id='pass']    text
     Click Element     //button[@id='loginAction']
     
