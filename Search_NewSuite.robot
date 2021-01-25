@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 TC1_ValidateOrder
     Append To Environment Variable    Path    ${OUTPUT_DIR}//driver
     
-
+#First line
     Open Browser    url=https://www.kohls.com/    browser=chrome
     Maximize Browser Window
     Set Selenium Implicit Wait    30s
