@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210125 09:35:53.873" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210125 14:48:09.075" rpa="false">
 <suite id="s1" name="KOHL" source="C:\Users\user\eclipse-workspace\Robot_Workspace\RobotFramework\KOHL">
-<suite id="s1-s1" name="Search NewSuite" source="C:\Users\user\eclipse-workspace\Robot_Workspace\RobotFramework\KOHL\Search_NewSuite.robot">
-<test id="s1-s1-t1" name="TC1_ValidateOrder">
+<suite id="s1-s1" name="LoginSuite" source="C:\Users\user\eclipse-workspace\Robot_Workspace\RobotFramework\KOHL\LoginSuite">
+<suite id="s1-s1-s1" name="VerifyInvalidLogin" source="C:\Users\user\eclipse-workspace\Robot_Workspace\RobotFramework\KOHL\LoginSuite\VerifyInvalidLogin.robot">
+<test id="s1-s1-s1-t1" name="TC1_ValidateOrder">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
 <arguments>
 <arg>Path</arg>
 <arg>${OUTPUT_DIR}//driver</arg>
 </arguments>
-<msg timestamp="20210125 09:35:54.338" level="INFO">Environment variable 'Path' set to value 'C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files (x86)\Groovy\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jre1.8.0_191\bin;C:\Program Files\Python38\Scripts;C:\Program Files\Python38\Lib;C:\Users\user\Anaconda3\ac3\New folder\New folder (2);C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\mingw-w64\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\usr\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Scripts;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;C:\Program Files (x86)\Groovy\bin;;C:\WINDOWS\system32;;C:\Users\user\eclipse-workspace\Robot_Workspace\RobotFramework\KOHL//driver'.</msg>
-<status status="PASS" starttime="20210125 09:35:54.337" endtime="20210125 09:35:54.338"></status>
+<msg timestamp="20210125 14:48:09.486" level="INFO">Environment variable 'Path' set to value 'C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files (x86)\Groovy\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\Java\jre1.8.0_191\bin;C:\Program Files\Python38\Scripts;C:\Program Files\Python38\Lib;C:\Users\user\Anaconda3\ac3\New folder\New folder (2);C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\mingw-w64\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\usr\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Library\bin;C:\Users\user\Anaconda3\ac3\New folder\New folder (2)\Scripts;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Roaming\npm;C:\Program Files (x86)\Groovy\bin;;C:\WINDOWS\system32;;C:\Users\user\eclipse-workspace\Robot_Workspace\RobotFramework\KOHL//driver'.</msg>
+<status status="PASS" starttime="20210125 14:48:09.485" endtime="20210125 14:48:09.486"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -18,47 +19,132 @@
 <arg>url=https://www.kohls.com/</arg>
 <arg>browser=chrome</arg>
 </arguments>
-<msg timestamp="20210125 09:35:54.339" level="INFO">Opening browser 'chrome' to base url 'https://www.kohls.com/'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210125 09:36:01.104" level="FAIL">WebDriverException: Message: chrome not reachable
-  (Session info: chrome=88.0.4324.104)
-</msg>
-<status status="FAIL" starttime="20210125 09:35:56.874" endtime="20210125 09:36:01.106"></status>
+<msg timestamp="20210125 14:48:09.488" level="INFO">Opening browser 'chrome' to base url 'https://www.kohls.com/'.</msg>
+<status status="PASS" starttime="20210125 14:48:09.487" endtime="20210125 14:48:50.813"></status>
 </kw>
-<msg timestamp="20210125 09:36:01.107" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
-  (Session info: chrome=88.0.4324.104)
-</msg>
-<msg timestamp="20210125 09:36:01.137" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=88.0.4324.104)
-</msg>
-<status status="FAIL" starttime="20210125 09:35:54.338" endtime="20210125 09:36:01.139"></status>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210125 14:48:50.814" endtime="20210125 14:48:52.455"></status>
 </kw>
-<status status="FAIL" starttime="20210125 09:35:54.334" endtime="20210125 09:36:01.148" critical="yes">WebDriverException: Message: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=88.0.4324.104)
-</status>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20210125 14:48:52.456" endtime="20210125 14:48:52.459"></status>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<arguments>
+<arg>//*[text()='Account']</arg>
+</arguments>
+<assign>
+<var>${ele}</var>
+</assign>
+<msg timestamp="20210125 14:48:52.489" level="INFO">${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session="2dd880419b2f03ab7c6c4b898c664eed", element="efed9a97-c87a-4519-abf3-bbc887fe98c7")&gt;</msg>
+<status status="PASS" starttime="20210125 14:48:52.460" endtime="20210125 14:48:52.489"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${ele}</arg>
+</arguments>
+<msg timestamp="20210125 14:48:52.491" level="INFO">Executing JavaScript:
+arguments[0].click();
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="2dd880419b2f03ab7c6c4b898c664eed", element="efed9a97-c87a-4519-abf3-bbc887fe98c7")&gt;'</msg>
+<status status="PASS" starttime="20210125 14:48:52.490" endtime="20210125 14:48:52.728"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[text()="My Kohl's Card"]</arg>
+</arguments>
+<msg timestamp="20210125 14:48:52.729" level="INFO">Clicking element '//a[text()="My Kohl's Card"]'.</msg>
+<status status="PASS" starttime="20210125 14:48:52.728" endtime="20210125 14:48:53.899"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[text()="OK"]</arg>
+</arguments>
+<msg timestamp="20210125 14:48:53.901" level="INFO">Clicking element '//button[text()="OK"]'.</msg>
+<status status="PASS" starttime="20210125 14:48:53.900" endtime="20210125 14:48:56.074"></status>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<doc>Switches to browser window matching ``locator``.</doc>
+<arguments>
+<arg>locator=NEW</arg>
+</arguments>
+<status status="PASS" starttime="20210125 14:48:56.075" endtime="20210125 14:48:56.095"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='user']</arg>
+<arg>abc</arg>
+</arguments>
+<msg timestamp="20210125 14:48:56.097" level="INFO">Typing text 'abc' into text field '//input[@id='user']'.</msg>
+<status status="PASS" starttime="20210125 14:48:56.096" endtime="20210125 14:49:06.284"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='pass']</arg>
+<arg>def</arg>
+</arguments>
+<msg timestamp="20210125 14:49:06.286" level="INFO">Typing text 'def' into text field '//input[@id='pass']'.</msg>
+<status status="PASS" starttime="20210125 14:49:06.285" endtime="20210125 14:49:06.412"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//button[@id='loginAction']</arg>
+</arguments>
+<msg timestamp="20210125 14:49:06.414" level="INFO">Clicking element '//button[@id='loginAction']'.</msg>
+<status status="PASS" starttime="20210125 14:49:06.413" endtime="20210125 14:49:08.133"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>//span[@class="alerttext"]</arg>
+</arguments>
+<assign>
+<var>${errortxt}</var>
+</assign>
+<msg timestamp="20210125 14:49:08.166" level="INFO">${errortxt} = </msg>
+<status status="PASS" starttime="20210125 14:49:08.134" endtime="20210125 14:49:08.166"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${errortxt}</arg>
+</arguments>
+<status status="PASS" starttime="20210125 14:49:08.166" endtime="20210125 14:49:08.167"></status>
+</kw>
+<status status="PASS" starttime="20210125 14:48:09.484" endtime="20210125 14:49:08.167" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20210125 09:35:53.939" endtime="20210125 09:36:01.165"></status>
+<status status="PASS" starttime="20210125 14:48:09.166" endtime="20210125 14:49:08.168"></status>
 </suite>
-<status status="FAIL" starttime="20210125 09:35:53.913" endtime="20210125 09:36:01.184"></status>
+<status status="PASS" starttime="20210125 14:48:09.157" endtime="20210125 14:49:08.171"></status>
+</suite>
+<status status="PASS" starttime="20210125 14:48:09.124" endtime="20210125 14:49:08.173"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="KOHL">KOHL</stat>
-<stat pass="0" fail="1" id="s1-s1" name="Search NewSuite">KOHL.Search NewSuite</stat>
+<stat pass="1" fail="0" id="s1" name="KOHL">KOHL</stat>
+<stat pass="1" fail="0" id="s1-s1" name="LoginSuite">KOHL.LoginSuite</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="VerifyInvalidLogin">KOHL.LoginSuite.VerifyInvalidLogin</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210125 09:36:01.107" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
-  (Session info: chrome=88.0.4324.104)
-</msg>
 </errors>
 </robot>

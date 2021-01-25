@@ -47,7 +47,7 @@ TC1_ValidateOrder
 
 
     Comment   Click on checkout 
-    # Click Element    //input[@name="Checkout"]   
+    Click Element    //input[@name="Checkout"]   
 # #10. click on guest checkout  
     # Click Element    //button[@id="LPGuestCheckout"]      
     
